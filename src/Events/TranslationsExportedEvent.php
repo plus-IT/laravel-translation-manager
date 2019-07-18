@@ -6,7 +6,7 @@
  * Time: 12:40 PM
  */
 
-namespace Barryvdh\TranslationManager\Events;
+namespace PlusIT\TranslationManager\Events;
 
 
 class TranslationsExportedEvent

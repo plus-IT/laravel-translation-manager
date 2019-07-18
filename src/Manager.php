@@ -1,9 +1,9 @@
 <?php
 
-namespace Barryvdh\TranslationManager;
+namespace PlusIT\TranslationManager;
 
-use Barryvdh\TranslationManager\Events\TranslationsExportedEvent;
-use Barryvdh\TranslationManager\Models\Translation;
+use PlusIT\TranslationManager\Events\TranslationsExportedEvent;
+use PlusIT\TranslationManager\Models\Translation;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Filesystem\Filesystem;

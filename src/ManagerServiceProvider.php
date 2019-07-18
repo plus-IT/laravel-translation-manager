@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\TranslationManager;
+<?php namespace PlusIT\TranslationManager;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
@@ -24,7 +24,7 @@ class ManagerServiceProvider extends ServiceProvider {
         $this->publishes([$configPath => config_path('translation-manager.php')], 'config');
 
         $this->app->singleton('translation-manager', function ($app) {
-            $manager = $app->make('Barryvdh\TranslationManager\Manager');
+            $manager = $app->make('PlusIT\TranslationManager\Manager');
             return $manager;
         });
 
@@ -70,11 +70,11 @@ class ManagerServiceProvider extends ServiceProvider {
 
         $migrationPath = __DIR__.'/../database/migrations';
         $this->publishes([
-            $migrationPath => base_path('database/migrations'),
+            $migrationPath => base_path('database/migrations/tenant'),
         ], 'migrations');
 
         $config = $this->app['config']->get('translation-manager.route', []);
-        $config['namespace'] = 'Barryvdh\TranslationManager';
+        $config['namespace'] = 'PlusIT\TranslationManager';
 
         $router->group($config, function($router)
         {

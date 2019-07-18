@@ -1,8 +1,8 @@
 <?php
 
-namespace Barryvdh\TranslationManager\Console;
+namespace PlusIT\TranslationManager\Console;
 
-use Barryvdh\TranslationManager\Manager;
+use PlusIT\TranslationManager\Manager;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
@@ -23,7 +23,7 @@ class ExportCommand extends Command
      */
     protected $description = 'Export translations to PHP files';
 
-    /** @var \Barryvdh\TranslationManager\Manager */
+    /** @var \PlusIT\TranslationManager\Manager */
     protected $manager;
 
     public function __construct(Manager $manager)

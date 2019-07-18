@@ -1,16 +1,17 @@
 {
-  "name": "barryvdh/laravel-translation-manager",
+  "name": "plus-IT/laravel-translation-manager",
   "description": "Manage Laravel Translations",
   "keywords": [
     "laravel",
     "translations",
-    "translator"
+    "translator",
+    "with-tenant"
   ],
   "license": "MIT",
   "authors": [
     {
-      "name": "Barry vd. Heuvel",
-      "email": "barryvdh@gmail.com"
+      "name": "Matrixhive Solutions",
+      "email": "contact@matrixhive.com"
     }
   ],
   "require": {
@@ -22,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Barryvdh\\TranslationManager\\": "src/"
+      "PlusIT\\TranslationManager\\": "src/"
     }
   },
   "extra": {
@@ -31,7 +32,7 @@
     },
     "laravel": {
       "providers": [
-        "Barryvdh\\TranslationManager\\ManagerServiceProvider"
+        "PlusIT\\TranslationManager\\ManagerServiceProvider"
       ]
     }
   },
