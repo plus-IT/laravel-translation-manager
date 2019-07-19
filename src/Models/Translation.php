@@ -1,4 +1,4 @@
-<?php namespace PlusIT\TranslationManager\Models;
+<?php namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use DB;
@@ -15,7 +15,7 @@ use DB;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  */
-class Translation extends Model{
+class Translation extends TenantModel{
 
     const STATUS_SAVED = 0;
     const STATUS_CHANGED = 1;

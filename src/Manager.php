@@ -3,7 +3,7 @@
 namespace PlusIT\TranslationManager;
 
 use PlusIT\TranslationManager\Events\TranslationsExportedEvent;
-use PlusIT\TranslationManager\Models\Translation;
+use App\Models\Translation;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Filesystem\Filesystem;

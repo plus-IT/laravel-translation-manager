@@ -22,7 +22,7 @@ This package will work with Multi-tenancy. You should install the [Multi-tenancy
 
 Require this package in your composer.json and run composer update (or run `composer require plus-IT/laravel-translation-manager` directly):
 
-    composer require plus-IT/laravel-translation-manager
+    composer require plus-it/laravel-translation-manager
 
 After updating composer, add the ServiceProvider to the providers array in `config/app.php`
 
