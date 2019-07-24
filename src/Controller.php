@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
-use App\Models\Translation;
+use PlusIT\TranslationManager\Models\Translation;
 use Illuminate\Support\Collection;
 use Tanmuhittin\LaravelGoogleTranslate\Commands\TranslateFilesCommand;
 

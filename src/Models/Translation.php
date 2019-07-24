@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace PlusIT\TranslationManager\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use DB;
