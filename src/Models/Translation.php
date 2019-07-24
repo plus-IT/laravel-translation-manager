@@ -1,6 +1,7 @@
 <?php namespace PlusIT\TranslationManager\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\TenantModel;
 use DB;
 
 /**
