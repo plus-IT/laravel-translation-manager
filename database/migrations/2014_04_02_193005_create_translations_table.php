@@ -22,6 +22,8 @@ class CreateTranslationsTable extends Migration {
             $table->text('key');
             $table->text('value')->nullable();
             $table->timestamps();
+	    $table->integer('is_locked')->nullable()->default(0);
+	    $table->text('hints', 65535)->nullable();
         });
 	}
 
@@ -32,7 +34,7 @@ class CreateTranslationsTable extends Migration {
 	 */
 	public function down()
 	{
-        Schema::drop('ltm_translations');
+       	    Schema::drop('ltm_translations');
 	}
 
 }
