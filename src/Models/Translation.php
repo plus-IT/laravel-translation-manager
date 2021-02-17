@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\TenantModel;
+use Hyn\Tenancy\Traits\UsesSystemConnection;
 use DB;
 
 /**
@@ -17,7 +18,7 @@ use DB;
  * @property \Carbon\Carbon $updated_at
  */
 class Translation extends TenantModel{
-
+    use UsesSystemConnection;
     const STATUS_SAVED = 0;
     const STATUS_CHANGED = 1;
 
